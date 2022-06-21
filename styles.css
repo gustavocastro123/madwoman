@@ -1,0 +1,713 @@
+@font-face {
+    font-family: 'Cormorant Medium Italic';
+    src:url(fonts/CormorantGaramond-MediumItalic.ttf);
+}
+@font-face {
+    font-family: 'Cormorant Medium';
+    src:url(fonts/CormorantGaramond-Medium.ttf);
+}
+@font-face {
+    font-family: 'Cormorant Light Italic';
+    src:url(fonts/CormorantGaramond-LightItalic.ttf);
+}
+@font-face {
+    font-family: 'Cormorant Light';
+    src:url(fonts/CormorantGaramond-Light.ttf);
+}
+@font-face {
+    font-family: 'Cormorant Italic';
+    src:url(fonts/CormorantGaramond-Italic.ttf);
+}
+@font-face {
+    font-family: 'Helvetica Light';
+    src:url(fonts/HelveticaNeue-Light-08.ttf);
+}
+@font-face {
+    font-family: 'Helvetica Light Italic';
+    src:url(fonts/HelveticaNeue-LightItalic-09.ttf);
+}
+@font-face {
+    font-family: 'Helvetica Regular';
+    src:url(fonts/HelveticaNeue-01.ttf);
+}
+@font-face {
+    font-family: 'Helvetica Italic';
+    src:url(fonts/HelveticaNeue-Italic-03.ttf);
+}
+@font-face {
+    font-family: 'Helvetica UltraLight Italic';
+    src:url(fonts/HelveticaNeue-UltraLightItalic-07.ttf);
+}
+@font-face {
+    font-family: 'Helvetica UltraLight';
+    src:url(fonts/HelveticaNeue-UltraLight-06.ttf);
+}
+/*************************************************************************/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+html {
+    background-color: black;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-flow: column;
+}
+
+p1 {
+     color: white;
+font-family: 'Helvetica Light Italic';
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    margin-top: 14px;
+    padding: 0;
+}
+
+p2 {
+     color: #6422EF;
+font-family: 'Helvetica Light Italic';
+    font-size: 15px;
+    position: fixed;
+    top: 0;
+    margin-top: 14px;
+    padding: 0;
+}
+
+
+f1 {
+   color: white;
+font-family: 'Helvetica Light Italic';
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+p3 {
+   color: #6422EF;
+font-family: 'Helvetica Light Italic';
+    font-size: 15px;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 14px;
+    padding: 0;
+}
+
+
+.Madwoman {
+    background-image: url(images/Group_1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 175px;
+    width: 100%;
+    background-position: center;
+    justify-content: center;
+    align-items: center;   
+    display: flex;
+    margin-top: 300px;
+}
+
+#backcontainer {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    z-index: -99;
+    overflow: hidden;
+    
+}
+#myVideo {
+    position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	z-index: 0;
+    
+}
+
+/***************************                  MENU          *************/
+
+.menu_inicial{
+    position: fixed;
+    margin-left: 4.5%;
+    margin-top: 82px;
+}
+
+ul {
+    position: fixed;
+    margin-left: 4.5%;
+    margin-top: 45px;
+    z-index: 1;
+}
+
+ul li {
+    list-style: none;
+    line-height: 36px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Cormorant Medium Italic';
+    color: #6422EF;
+    font-size: 22px;
+}
+
+ul li a:hover{
+    color: #FFF600;
+}
+
+
+.seccao_menu {
+    color: #FFF600;
+    font-family:  'Helvetica Light Italic';
+    font-size: 18px;
+}
+
+
+.scroll_arrow {
+    background-image: url(images/seta%20baixo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 100%;
+    position: fixed;
+    bottom: 70px;
+    margin-left: 4.5%;
+}
+
+
+
+/***********************************   Estilos de parágrafos     ************/
+
+
+p4 {
+    color: #FFF600;
+    font-family: 'Cormorant Light Italic';
+    font-size: 38px;
+}
+
+p5 {
+    color: white;
+    font-family: 'Helvetica Light';
+    font-size: 17px;
+    line-height: 22px;
+}
+
+p6 {
+    color: #FFF600;
+    font-family: 'Helvetica Light Italic';
+    font-size: 20px;
+    line-height: 30px;
+}
+
+p7 {
+    font-family: 'Helvetica Light Italic';
+    font-size: 17px;
+     color: #FFF600;
+}
+
+
+p9 {
+    font-family: 'Helvetica Light Italic';
+    font-size: 14px;
+     color: #FFF600;
+}
+
+p8 {
+    color: white;
+    font-family: 'Helvetica Light';
+    font-size: 12px;
+}
+
+
+
+/**************************        TEXTOS E tITULOS          **********************/
+
+.titulo_esquerda {
+    margin-top: 70px;
+    margin-left: 18%;
+}
+.titulo_direita {
+    margin-top: 90px;
+    margin-left: 58%;
+}
+
+.coluna_direita {
+    width: 37%;
+    margin-left: 58%;
+    margin-top: 20px;
+}
+.coluna_esquerda {
+    margin-left: 18%;
+    width: 37%;
+    margin-top: 20px;
+}
+
+
+/************************          ORIGEM            ******* ****************/
+
+.infoexcertos {
+    margin-left: 18%;
+}
+.excertos {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+}
+#excerto1 {
+    height: auto;
+    margin-left: 18%;
+    width: 37%;
+    float: left;
+}
+#excerto2 {
+    height: auto;
+    margin-left: 2.8%;
+    width: 37%;
+}
+
+#excerto3 {
+    height: auto;
+    width: 37%;
+    margin-left: 45%;
+}
+
+.espacamento {
+    height: 150px;
+    width: 100%;
+}
+
+#excerto4 {
+    height: auto;
+    width: 37%;
+    margin-left: 4.5%;
+}
+#excerto5 {
+    height: auto;
+    width: 37%;
+    margin-left: 16%;
+}
+
+.espacamentofinal {
+    height: 90px;
+    width: 100%;
+}
+
+.legenda_1 {
+    float: left;
+    margin-left: 18%;
+}
+
+.legenda_2 {
+    margin-left: 58%;
+}
+
+.legenda_3 {
+    margin-left: 45%;
+}
+
+.legenda_4 {
+    float: left;
+    margin-left: 4.5%;
+}
+
+.legenda_5 {
+    margin-left: 57.5%;
+}
+
+/*********************             MADWOMAN             *******************/
+
+#teaser {
+    height: auto;
+    width: 72.5%;
+    margin-left: 4.5%;
+    margin-top: 90px;
+}
+
+.infoteaser {
+    margin-left: 4.5%;
+}
+
+/*********************             PROJECT ROOM             *******************/
+
+.videopr {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+#video_pr {
+    height: auto;
+    width: 100%;
+}
+
+
+
+.prologue {
+    margin-left: 45%;
+    width: 10%;
+    float: left;
+}
+
+
+
+
+
+
+/*
+.contentor {
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-top: 200px;
+}
+
+
+
+.slideshow-container {
+  width: 37%;
+height: auto;
+  position: relative;
+margin: auto;
+    margin-left: 58%;
+margin-bottom: 5%;
+object-fit:cover;
+    
+}
+
+.mySlides {
+  display: none;
+overflow: hidden;
+height: 430px;
+    cursor: pointer;
+    
+}
+
+.prev .next {
+  cursor:pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 4px 4px 0;
+  user-select: none;
+    cursor: pointer;
+}
+
+.next {
+border-radius: 3px 0 0 3px;
+color: #FFFFFF;
+float: right;
+    cursor: pointer;
+}
+
+.prev {
+border-radius: 3px 0 0 3px;
+color: #FFFFFF;
+float: left;
+    cursor: pointer;
+}
+
+.numbertext {
+  color: #fff600;
+  font-size: 12px;
+  padding: 0px 0px;
+  position: absolute;
+  bottom: 0;
+ font-family: 'Helvetica Light Italic';
+
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+*/
+
+
+
+
+.contentor {
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-top: 150px;
+}
+
+.mySlides1 .mySlides2 {
+  display: none;
+overflow: hidden;
+height: auto;
+    cursor: pointer;
+    
+}
+
+
+/* Slideshow container */
+.slideshow-container {
+  width: 37%;
+  position: relative;
+  margin: auto;
+    height: auto;
+    margin-left: 58%;
+    margin-bottom: 5%;
+object-fit:cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+.numbertext {
+  color: #fff600;
+  font-size: 14px;
+  padding: 0px 0px;
+  position: absolute;
+  bottom: 0;
+ font-family: 'Helvetica Light Italic';
+   margin-left: 45%;
+    transform: translateX(-50%, 50%);
+
+}
+
+
+
+
+
+.coluna_atos {
+    width: 37%;
+    margin-left: 58%;
+    margin-top: 0px;
+}
+
+
+/*********************             PERCEPCOES             *******************/
+
+
+.gabinetes {
+    margin-top: 200px;
+    position: absolute;
+    margin-left: 35%;
+    line-height: 25px;
+}
+
+
+#gabinetes {
+    text-decoration: none;
+    color: #FFF600;
+    font-family: 'Cormorant Light Italic';
+    font-size: 28px;
+}
+
+#gabinetes:hover {
+    opacity: 40%;
+}
+
+.gabinetes_ficcao {
+    float: left;
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+#videos {
+    height: 353px;;
+    width: 37%;
+    margin-left: 18%;
+    float: left;
+}
+
+
+.coluna_gabinetes {
+    width: 37%;
+    margin-left: 2.8%;
+}
+
+/*********************             GABINETES             *******************/
+
+.setas {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    position: relative;
+    bottom: 60px;
+}
+
+#img_seta_esquerda {
+    height: 20px;
+    width: auto;
+    margin-left: 20%;
+}
+
+#img_seta_direita {
+    height: 20px;
+    width: auto;
+    margin-left: 250%;
+}
+
+
+
+
+
+
+
+/*********************             PRODUÇÃO            *******************/
+
+
+
+
+.mockups {
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+}
+
+
+
+.mockup-container {
+  width: 50%;
+height: auto;
+  position: relative;
+margin: auto;
+    margin-left: 18%;
+object-fit: cover;
+    margin-bottom: 20px;
+    
+}
+
+.mySlides {
+  display: none;
+overflow: hidden;
+height: auto;;
+    cursor: pointer;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.prev .next {
+  cursor:pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 4px 4px 0;
+  user-select: none;
+    cursor: pointer;
+}
+
+.next {
+border-radius: 3px 0 0 3px;
+color: #FFFFFF;
+float: right;
+    cursor: pointer;
+}
+
+.prev {
+border-radius: 3px 0 0 3px;
+color: #FFFFFF;
+float: left;
+    cursor: pointer;
+}
+
+.numbertext {
+  color: #fff600;
+  font-size: 12px;
+  padding: 0px 0px;
+  position: absolute;
+  bottom: 0;
+ font-family: 'Helvetica Light Italic';
+
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
